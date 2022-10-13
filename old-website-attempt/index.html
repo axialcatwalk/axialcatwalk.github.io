@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="axialcatwalk">
+        <meta property="og:description" content="a newer placeholder?">
+        <meta name="theme-color" content="#00cae7">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <script>
+    let card
+    window.onload = function() {
+    card = document.getElementById("flip-card-inner")
+    }
+    
+
+    function flip() {
+    card.style.transform = "rotateY(180deg)"  
+    }
+
+    function unflip() {
+    card.style.transform = "rotateY(0deg)"
+    }
+    </script>
+
+    <body scroll="no" style="overflow: hidden">
+        <img src="images/lesbians.jpg" width="100%" height="100%" class="background">
+
+    <div class="flip-card">
+    <div id="flip-card-inner">
+    <div id="flip-card-front">
+        <h1>axialcatwalk</h1>
+        i'm way too gay for this
+    <p>
+        <a href="https://twitter.com/chlowoee">twitter</a>
+        <a href="http://discord.axialcatwalk.net">discord</a>
+        <a href="https://github.com/timnook">github</a>
+    <p>
+    <button onclick="flip()">omg a button</button>
+    </div>
+    <div class="flip-card-back">
+    dpojasodijasdijasddo
+    </div>
+    </body>
+</html>
