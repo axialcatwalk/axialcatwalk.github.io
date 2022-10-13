@@ -13,36 +13,38 @@
     <script>
     let card
     window.onload = function() {
-    card = document.getElementById("flip-card-inner")
+        card = document.getElementById("flip-card-inner")
     }
     
 
     function flip() {
-    card.style.transform = "rotateY(180deg)"  
-    }
-
-    function unflip() {
-    card.style.transform = "rotateY(0deg)"
+        if(card.style.transform == "rotateY(180deg)") {
+            card.style.transform = "rotateY(0deg)"
+        } else {
+            card.style.transform = "rotateY(180deg)"
+        }
     }
     </script>
 
     <body scroll="no" style="overflow: hidden">
         <img src="images/lesbians.jpg" width="100%" height="100%" class="background">
 
-    <div class="flip-card">
-    <div id="flip-card-inner">
-    <div id="flip-card-front">
-        <h1>axialcatwalk</h1>
-        i'm way too gay for this
-    <p>
-        <a href="https://twitter.com/chlowoee">twitter</a>
-        <a href="http://discord.axialcatwalk.net">discord</a>
-        <a href="https://github.com/timnook">github</a>
-    <p>
-    <button onclick="flip()">omg a button</button>
-    </div>
-    <div class="flip-card-back">
-    dpojasodijasdijasddo
-    </div>
+        <div class="flip-card">
+            <div id="flip-card-inner">
+                <div id="flip-card-front">
+                    <h1>axialcatwalk</h1>
+                    i'm way too gay for this
+                    <p>
+                        <a href="https://twitter.com/chlowoee">twitter</a>
+                        <a href="http://discord.axialcatwalk.net">discord</a>
+                        <a href="https://github.com/timnook">github</a>
+                    <p>
+                    <button onclick="flip()">flip</button>
+                </div>
+                <div class="flip-card-back">
+                    dpojasodijasdijasddo
+                </div>
+            </div>
+        </div>
     </body>
 </html>
